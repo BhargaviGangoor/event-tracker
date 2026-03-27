@@ -52,8 +52,8 @@ A backend system that tracks user events, providing basic analytics, and enablin
 **`POST /track`**
 Stores an event in the relational database and generates a semantic embedding which is stored in the vector database.
 
-![POST /track Request](assets/track_request.png)
-![POST /track Response](assets/track_response.png)
+![POST /track Request](assets/track_query.png)
+![POST /track Response](assets/track_response.jpg)
 
 *Example `curl` Request:*
 ```bash
@@ -91,7 +91,7 @@ curl -X 'POST' \
 Retrieves basic aggregate analytics of user behavior.
 
 ![GET /analytics Query](assets/analytics_query.png)
-![GET /analytics Response](assets/analytics_response.png)
+![GET /analytics Response](assets/analytics_response.jpg)
 
 *Query Parameters (Optional):*
 - `event` (string | null): Filter by event type
